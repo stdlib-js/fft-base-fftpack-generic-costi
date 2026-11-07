@@ -1,4 +1,0 @@
-// Copyright (c) 2026 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
-/// <reference types="./index.d.ts" />
-import{assign as s}from"https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sincos@v0.3.1-esm/index.mjs";import t from"https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-pi@v0.2.3-esm/index.mjs";import e from"https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@v0.2.4-esm/index.mjs";import i from"https://cdn.jsdelivr.net/gh/stdlib-js/fft-base-fftpack-generic-rffti@esm/index.mjs";var r=[0,0];function n(n,m,d,f){var o,a,l,p,j,c;if(n<=3)return m;for(o=e(n/2),p=t/(n-1),j=0,l=f+d,a=f+(n-2)*d,c=1;c<o;c++)s((j+=1)*p,r,1,0),m[l]=2*r[0],m[a]=2*r[1],l+=d,a-=d;return i(n-1,m,d,f+n*d),m}export{n as default};
-//# sourceMappingURL=index.mjs.map
